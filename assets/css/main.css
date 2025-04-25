@@ -3620,8 +3620,8 @@ Hero-6 Animation
   fill: var(--clr-theme-1);
 }
 .contact-link__text p {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 15px;
+  /* font-weight: 600; */
   font-family: var(--tpl-ff-heading);
   margin-bottom: 0;
   color: var(--clr-common-white);
@@ -7974,6 +7974,9 @@ body {
 .contact-info-content h4 {
   margin-bottom: 0;
   font-size: 20px;
+}
+.contact-info-content h4 a{
+  font-variant: small;
 }
 @media (max-width:450px) {
   .contact-info-content h4 {
