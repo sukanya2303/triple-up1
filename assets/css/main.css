@@ -223,9 +223,9 @@ h6 {
   transition: all 0.3s ease-out 0s;
 }
 
-h1 {
+/* h1 {
   font-size: 100px;
-}
+} */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   h1 {
     font-size: 90px;
@@ -5647,12 +5647,20 @@ body {
     margin-left: 0;
   }
 }
+@media (min-width: 320px) and (max-width: 768px){
+  .hero-inner .hero__content .hero__title {
+    margin-bottom: 0;
+    font-size: 40px;
+  }
+}
 
 .hero__title {
   margin-bottom: 0;
+  font-size: 80px;
 }
 .hero__title .regular-text {
   font-weight: 400;
+  
   font-family: "Tenor Sans", sans-serif;
 }
 .hero__text {
