@@ -3579,6 +3579,9 @@ Hero-6 Animation
   align-items: center;
   gap: 105px;
 }
+.header-3-main-right .main-menu .navbar-active a{
+  color: var(--clr-bg-2);
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .header-3-main-right {
     gap: 80px;
@@ -3900,6 +3903,9 @@ Hero-6 Animation
   margin-right: auto;
   z-index: 3;
 }
+.offcanvas-nav-wrapper .main-nav-js .sidebar-menu-area .navbar-active a{
+  color: var(--clr-bg-2);
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .offcanvas-nav-wrapper .main-nav-js .sidebar-menu-area > ul {
     padding: 45px 0 35px;
@@ -4088,6 +4094,7 @@ Hero-6 Animation
   border-radius: 50%;
   display: inline-block;
 }
+
 
 .main-page-wrapper {
   width: 100%;
@@ -14600,7 +14607,7 @@ body {
 }
 
 .project__thumb-1 {
-  height: 691px;
+  height: 350px;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -14626,7 +14633,7 @@ body {
   }
 }
 .project__thumb-2 {
-  height: 691px;
+  height: 350px;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -14640,7 +14647,7 @@ body {
   width: 100%;
   object-fit: cover;
   position: absolute;
-  height: 105%;
+  /* height: 105%; */
   margin-left: auto;
   margin-right: auto;
   bottom: 0;
@@ -15444,6 +15451,10 @@ body {
   position: relative;
   margin-bottom: 20px;
   display: inline-block;
+}
+.history-content .highlight-p{
+  color: var(--clr-bg-2);
+  font-weight: bold;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .history-content h2 {
