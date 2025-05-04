@@ -13168,7 +13168,7 @@ body {
 
 .design-humb-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 75px 115px;
   margin-top: 100px;
   margin-bottom: 70px;
@@ -13211,7 +13211,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: auto;
   height: 100%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
