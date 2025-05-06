@@ -13173,8 +13173,18 @@ body {
   margin-top: 100px;
   margin-bottom: 70px;
 }
+.design-humb-grid-long {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 75px 115px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
 @media only screen and (min-width: 1400px) and (max-width: 1600px), only screen and (min-width: 1200px) and (max-width: 1399px) {
   .design-humb-grid {
+    gap: 50px 50px;
+  }
+  .design-humb-grid-long {
     gap: 50px 50px;
   }
 }
@@ -13182,9 +13192,16 @@ body {
   .design-humb-grid {
     gap: 45px 45px;
   }
+  .design-humb-grid-long {
+    gap: 45px 45px;
+  }
 }
 @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   .design-humb-grid {
+    gap: 30px 0px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .design-humb-grid-long {
     gap: 30px 0px;
     grid-template-columns: repeat(1, 1fr);
   }
@@ -13212,6 +13229,23 @@ body {
   top: 0;
   left: 0;
   width: auto;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: cover;
+}
+.design-thumb-long {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.design-thumb-long iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
