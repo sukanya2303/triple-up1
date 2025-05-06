@@ -13104,7 +13104,9 @@ body {
 }
 
 .case-subtitle {
-  font-size: 16px;
+  font-size: 56px;
+  text-align: center;
+  margin: 50px 0;
 }
 .case-subtitle span {
   padding-right: 5px;
