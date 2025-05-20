@@ -13175,13 +13175,29 @@ body {
   margin-top: 100px;
   margin-bottom: 70px;
 }
-.design-humb-grid-long {
+.design-thumb-grid-long {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 75px 115px;
   margin-top: 100px;
   margin-bottom: 70px;
 }
+
+.design-humb-grid-seo{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 75px 55px;
+  margin-top: 100px;
+  margin-bottom: 70px;  
+}
+
+.design-humb-grid-seo .design-seo a img{
+   transition: transform 0.3s ease-in-out;
+ }
+.design-humb-grid-seo .design-seo a:hover img{
+   transform: scale(1.1); /* Increases size by 10% */
+}
+
 @media only screen and (min-width: 1400px) and (max-width: 1600px), only screen and (min-width: 1200px) and (max-width: 1399px) {
   .design-humb-grid {
     gap: 50px 50px;
@@ -13239,7 +13255,7 @@ body {
 .design-thumb-long {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 300px;
   overflow: hidden;
 }
 
@@ -15849,6 +15865,30 @@ body {
   gap: 5px 28px;
   flex-wrap: wrap;
 }
+
+/* For seo page */
+.breadcrumb-menu .breadcrumb-trail-seo .trail-items-seo .trail-item-seo span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #171717;
+  text-transform: capitalize;
+  font-family: var(--tpl-ff-heading);
+}
+.breadcrumb-menu .breadcrumb-trail-seo .trail-items-seo .trail-item-seo:first-child span {
+  color: #171717;
+}
+.breadcrumb-menu .breadcrumb-trail-seo .trail-items-seo .trail-item-seo:not(:last-child):after {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  inset-inline-end: -15px;
+  width: 1px;
+  height: 10px;
+  background: #414141;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 @media (max-width: 575px) {
   .breadcrumb-menu ul {
     justify-content: flex-start;
@@ -17054,5 +17094,59 @@ label {
 .sketch .progress__border {
   background-color: #fdad00;
 }
+
+
+
+
+/* SEO Single Page */
+.seo-section{
+  margin-top: 50px;
+ 
+}
+.seo-section .main-seo{
+  padding: 20px 80px;
+  background-color: #F4F4F4;
+}
+.seo-section .main-seo ul{
+  list-style-type: none;
+  margin-top: 50px;
+}
+.seo-section .main-seo ul li{
+  margin-bottom: 50px;
+  margin-top: 10px;
+  
+}
+.seo-section .about-seo{
+  margin-top: 50px;
+}
+.seo-section .wws-seo{
+  margin-top: 70px;
+}
+.seo-section .wws-seo img{
+  width: 950px;
+}
+.seo-section .result-seo{
+  margin-top: 70px;
+}
+.seo-section .result-seo img{
+  width: 950px;
+}
+
+
+@media (min-width: 320px) and (max-width: 476px){
+  .seo-section .main-seo{
+    padding: 10px;
+  }
+  .seo-section .main-seo ul{
+    margin-top: 0;
+  }
+  .seo-section .main-seo ul li{
+    margin-bottom: 20px;
+  }
+  .seo-section p{
+    font-size: 15px;
+  }
+}
+
 
 /*# sourceMappingURL=main.css.map */
