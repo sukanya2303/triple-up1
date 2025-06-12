@@ -86,6 +86,7 @@
   --clr-bg-4: #f2f2f2;
   --clr-bg-5: #F7F7F7;
   --clr-bg-6: #E8F5FF;
+  --clr-background-gray: #bfbfbfb9;
 }
 
 * {
@@ -5429,7 +5430,9 @@ Hero-6 Animation
 .primary-bg {
   background: var(--clr-background-primary);
 }
-
+.bg-gray{
+  background: var(--clr-background-gray) ;
+}
 .alice-blue-bg {
   background: var(--clr-bg-6);
 }
@@ -13168,6 +13171,7 @@ body {
   }
 }
 
+/* short form content */
 .design-humb-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -13175,7 +13179,16 @@ body {
   margin-top: 100px;
   margin-bottom: 70px;
 }
-.design-thumb-grid-long {
+ /* .design-humb-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 75px 115px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+} */
+
+/* long form content */
+.design-humb-grid-long {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 75px 115px;
@@ -13183,6 +13196,7 @@ body {
   margin-bottom: 70px;
 }
 
+/* SEO */
 .design-humb-grid-seo{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -13198,6 +13212,23 @@ body {
    transform: scale(1.1); /* Increases size by 10% */
 }
 
+/* Website */
+.design-humb-grid-web{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 75px 55px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+.design-humb-grid-web .web-title{
+  font-size: 25px;
+}
+.design-humb-grid-web .design-web a img{
+   transition: transform 0.3s ease-in-out;
+ }
+.design-humb-grid-web .design-web a:hover img{
+   transform: scale(1.1);
+}
 @media only screen and (min-width: 1400px) and (max-width: 1600px), only screen and (min-width: 1200px) and (max-width: 1399px) {
   .design-humb-grid {
     gap: 50px 50px;
@@ -13213,6 +13244,9 @@ body {
   .design-humb-grid-long {
     gap: 45px 45px;
   }
+  .design-humb-grid-web .web-title{
+    font-size: 17px;
+  }
 }
 @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   .design-humb-grid {
@@ -13223,6 +13257,20 @@ body {
     gap: 30px 0px;
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .design-humb-grid-seo{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .design-humb-grid-web{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .design-humb-grid-web .web-title{
+    font-size: 17px;
+  }
+
+
 }
 
 .design-thumb:nth-child(even) {
@@ -13252,6 +13300,8 @@ body {
   transition: 0.5s;
   background-size: cover;
 }
+
+
 .design-thumb-long {
   position: relative;
   width: 100%;
@@ -14712,7 +14762,7 @@ body {
   }
 }
 .project__thumb-3 {
-  height: 465px;
+  height: 350px;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -14723,13 +14773,21 @@ body {
   }
 }
 .project__thumb-3 img {
-  width: 100%;
+  /* width: 100%;
   object-fit: cover;
   position: absolute;
   height: 120%;
   margin-left: auto;
   margin-right: auto;
-  bottom: 0;
+  bottom: 0; */
+
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  /* height: 105%; */
+  margin-left: auto;
+  margin-right: auto;
+  /* bottom: 0; */
 }
 @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   .project__thumb-3 img {
@@ -14739,7 +14797,7 @@ body {
   }
 }
 .project__thumb-4 {
-  height: 465px;
+  height: 350px;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -14750,13 +14808,21 @@ body {
   }
 }
 .project__thumb-4 img {
-  width: 100%;
+  /* width: 100%;
   object-fit: cover;
   position: absolute;
   height: 120%;
   margin-left: auto;
   margin-right: auto;
-  bottom: 0;
+  bottom: 0; */
+
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  /* height: 105%; */
+  margin-left: auto;
+  margin-right: auto;
+  /* bottom: 0; */
 }
 @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   .project__thumb-4 img {
@@ -14856,7 +14922,8 @@ body {
   display: grid;
   grid-auto-columns: 1fr;
   grid-column-gap: 125px;
-  grid-row-gap: 85px;
+  /* grid-row-gap: 85px; */
+  grid-row-gap: 55px;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto;
@@ -17114,7 +17181,12 @@ label {
 .seo-section .main-seo ul li{
   margin-bottom: 50px;
   margin-top: 10px;
-  
+}
+.seo-section .main-seo .url{
+  color: var(--clr-bg-2);
+}
+.seo-section .main-seo .url:hover{
+  text-decoration: underline;
 }
 .seo-section .about-seo{
   margin-top: 50px;
